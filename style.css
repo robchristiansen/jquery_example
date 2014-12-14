@@ -1,0 +1,29 @@
+
+
+.wrapper {
+width: 900px;
+margin: 0 auto;
+}
+
+.columnVaries{
+	float: right;
+	display: block;
+}
+
+
+.slidesUp{
+	width: 100px;
+}
+
+.prompt{
+	width: 900px auto;
+	font-size: 50px;
+	text-align: right;
+	background-color: gray;	
+}
+
+.penguinReturn{
+	width: 850px;
+	height: 100px;
+
+}
