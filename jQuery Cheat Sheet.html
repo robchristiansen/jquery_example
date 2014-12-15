@@ -1,0 +1,71 @@
+<!-- Example head with link to min'd jQuery library -->
+
+<!DOCTYPE html>
+<html>
+<head>
+<link rel="stylesheet" type="text/css" href="style.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js">
+	</script>
+<title>jQuery Tests</title>
+</head>
+<body>
+	
+<!-- Like all javascripts, load any jQuery within script tags. -->
+			<script>
+//generally, the dollor sign calls the jquery library, which is why it is there in jQuery, but not in all javascript.
+
+
+// This hides the class, prompt
+					$(".prompt").hide();
+//This shows the class, prompt
+					$(".prompt").show();
+
+//This hides the class, prompt by sliding up over 1000 ms
+					$(".prompt").slieUp(1000);
+
+//This fades in the class, prompt over 1000 ms
+					$(".prompt").fadeIn(1000);
+
+
+//This example shows syntax for the "animate" function, where 5000 is in ms.
+					$(".columnVaries").animate({
+						width: '400px'
+					} , 5000 );
+	
+
+// This shows the syntax of the anonymous function so that one action completes before the second action begins. Function one (slideUp) completes, theen calls the 2nd function (show) to start. Note how the whole 2nd function appears within curly brackets within the 'argument' section of the first function.
+					$(".slidesUp").slideUp(6000, function(){
+						$(".prompt").show();
+						});
+
+
+//Thi example uses the anonymous function coupled with the .click function. When you click on the "prompt" class, two things happen.
+					$(".prompt").click( function(){
+						$(".penguinReturn").show();
+						$(".prompt").hide();
+					});
+
+//Similarly, (document).ready uses the .ready function to run functions once the page is loaded. This can also be used for other triggers using the dom, like $("body").ready();
+
+					$(document).ready(function(){
+						$(".theStuffChanges").hide();
+						$(".theStuffChanges").fadeIn(2000);					
+						}
+					);
+				});
+
+//Dom. For other examples of DOM use, you can call $("body") or $("wrapper"), and many other classes or ids.
+
+
+
+
+			</script>
+</body>
+</html>
+
+
+
+
+
+
+

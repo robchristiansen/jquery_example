@@ -10,15 +10,15 @@
 			
 
 
-			<script>
-			// 	$(document).ready(function(){
+
+<!-- 			// 	$(document).ready(function(){
 			// 		$(".theStuffChanges").hide();
 			// 		$(".theStuffChanges").fadeIn(4000);
 			// 		$("img").animate({
 			// 			width: '300px'
 			// 		} , 4000 );
-			// })
-			 </script>
+			// }) -->
+		
 
 
 
@@ -30,7 +30,7 @@
 
 		<div class="columnVaries">
 				<p class="theStuffChanges">
-					stuff Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+					Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
 					tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
 					quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
 					consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
@@ -55,14 +55,22 @@
 
 	</div>	
 			<script>
+
+				// $(".illistration").hide();
+
+				// $(".illistration").fadeIn(2000, function(){
+				// 	$(".theStuffChanges").hide();
+				// 	}
+				// );
+
+
+
+
+					$(".prompt").hide();
 					$(".columnVaries").animate({
 						width: '400px'
-					} , 6000 );
-					// $(".prompt").hide();
-
+					} , 5000 );
 					$(".penguinReturn").hide();
-
-
 				$(document).ready(function(){
 					$(".theStuffChanges").hide();
 					$(".theStuffChanges").fadeIn(2000);
@@ -72,12 +80,20 @@
 					$(".illistration").animate({
 						width: '400px'
 					} , 4000 );
-					$(".slidesUp").slideUp(8000)
+					$(".slidesUp").animate({
+						width: '400px'
+					} , 1500 );
+					$(".slidesUp").animate({
+						width: '50px'
+					} , 1000);
+					$(".slidesUp").slideUp(6000, function(){
+						$(".prompt").show();
+						}
+					);
 					$(".prompt").click( function(){
 						$(".penguinReturn").show();
 						$(".prompt").hide();
 					})
-
 				})
 			</script>
 </body>

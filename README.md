@@ -1,0 +1,1 @@
+This is a site using jQuery with a jQuery cheat sheet.

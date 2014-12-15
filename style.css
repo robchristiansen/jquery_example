@@ -16,10 +16,11 @@ margin: 0 auto;
 }
 
 .prompt{
-	width: 900px auto;
 	font-size: 50px;
-	text-align: right;
+	text-align: left;
 	background-color: gray;	
+	padding: 45px;
+	text-align: center;
 }
 
 .penguinReturn{
